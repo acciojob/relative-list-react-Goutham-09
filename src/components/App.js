@@ -11,9 +11,12 @@ const App = () => {
 
   return (
     <div id="main">
-               <ol key="relativeList">
+               <ol key="relativeList" data-key="relativeList">
         {relatives.map((relative, index) => (
-          <li key={`relativeListItem${index + 1}`}>
+          <li
+            key={`relativeListItem${index + 1}`}
+            data-key={`relativeListItem${index + 1}`}
+          >
             {relative}
           </li>
         ))}
