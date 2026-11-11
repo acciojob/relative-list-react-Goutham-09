@@ -10,19 +10,17 @@ const App = () => {
   ];
 
   return (
-    <div>
-      <h2>Relatives to Visit This Diwali</h2>
-
-      <ol key="relativeList">
+    <div id="main">
+               <ol key="relativeList">
         {relatives.map((relative, index) => (
           <li key={`relativeListItem${index + 1}`}>
             {relative}
           </li>
         ))}
       </ol>
+
     </div>
-  );
-  
+  )
 }
 
 export default App
